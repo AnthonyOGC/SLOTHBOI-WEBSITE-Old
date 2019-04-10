@@ -1,0 +1,56 @@
+/* ----- CENTER DIV ----- */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table
+}
+
+#content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* ----- TEXT BLINK -----*/
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 2s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* ----- HYPERLINK UNDERLINE -----*/
+.nounderline {
+  text-decoration: none !important
+}
+
+/* ----- NAVBAR -----*/
+
+.navbar-nav {
+  font-size: 28px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+/* ----- MUSIC -----*/
+
+.rotate-270 {
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+}
